@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Basic Two-Column Layout</title>
+	</head>
+
+	<body>
+	
+		<style>
+			
+			div {
+				border:solid 1px black;
+			}
+		
+			#container {
+				margin:50px auto;
+				width:900px;
+				padding:10px;
+                overflow:auto;
+			}
+			
+			#titlebar {
+				font-size:20pt;
+				padding:25px;
+				text-align:center;
+			}
+			
+			#col1 {
+				margin:10px 10px 0px 0px;
+				width:300px;
+			}
+			
+			#col2 {
+				margin-top:10px;
+				width:585px;
+			}
+
+			#col1, #col2 {
+				min-height:700px;
+				float:left;
+			}
+		
+		</style>
+		
+		
+		<div id="container">
+		
+			<div id="titlebar">
+				My title
+			</div>
+			
+			<div id="col1">
+			</div>
+			
+			<div id="col2">
+			</div>
+		
+		</div>
+				
+	</body>
+</html>

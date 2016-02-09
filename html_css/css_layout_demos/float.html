@@ -1,0 +1,56 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+        
+        <!-- Turning our divs into nice buttons -->
+        
+        <style>
+            
+            body {
+                font-family:helvetica;
+                font-weight:100;
+            }
+            
+            /* 
+            float:left makes each div
+            align horizontally from left
+            to right
+            */
+            .box {
+                padding:7px 30px;
+                float:left;
+                margin:5px;
+                background-color:#EEE;
+                border:solid 1px #CCC;
+                font-size:9pt;
+            }
+            
+            /* this adds a nice hover effect */
+            .box:hover {
+                background-color:#DDD;
+                border:solid 1px #BBB;
+                cursor:pointer;
+            }
+            
+            /* 
+            the parent is centered 
+            using margin:30px auto
+            */
+            #parent {
+                width:237px;
+                margin:30px auto;
+                overflow:auto;
+                text-align:center;
+            }
+        </style>
+        
+        <div id="parent">
+            <div class="box" id="one">1</div>
+            <div class="box" id="two">2</div>
+            <div class="box" id="three">3</div>
+        </div>
+            
+    </body>
+</html>

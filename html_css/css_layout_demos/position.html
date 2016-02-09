@@ -1,0 +1,79 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+        
+        <!-- HTML comment -->
+        
+        <style>
+            /* CSS comment */
+            
+            /* Make the body scrollable */ 
+            body {
+                height:1000px;   
+            }
+            
+            .box {
+                padding:40px;
+            }
+            
+            /* 
+            position:absolute takes a 
+            div out of the flow of the 
+            document and puts it in a precise 
+            location (defined with top:0px and
+            left:100px
+            */ 
+            #one {
+                background-color:red;
+                position:absolute;
+                top:0px;
+                left:100px;
+            }
+            
+            /* 
+            position:static is default,
+            so the div acts normally
+            in the document's flow
+            */ 
+            #two {
+                background-color:blue;
+                position:static;
+            }
+            /* 
+            position:fixed attaches a div
+            to a location on the screen
+            even if you scroll.
+            (try scrolling down)
+            */ 
+            #three {
+                background-color:green;
+                position:fixed;
+                top:0px;
+                left:200px;
+            }
+            
+            #four {
+                background-color:orange;
+            }
+            #five {
+                background-color:yellow;
+            }
+            #six {
+                background-color:grey;
+            }
+        </style>
+        
+        
+        <div class="box" id="one">1</div>
+        <div class="box" id="two">2</div>
+        <div class="box" id="three">3</div>
+        <div class="box" id="four">4</div>
+        <div class="box" id="five">5</div>
+        <div class="box" id="six">6</div>
+       
+        
+            
+    </body>
+</html>
