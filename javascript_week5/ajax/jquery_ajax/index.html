@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Ajax in jQuery</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="ajax.js"></script>
+
+  </head>
+  <body>
+    <h1>Basic AJAX in jQuery</h1>
+
+    <div id="info">
+        <p>The data comes from a simple weather API, called OpenWeatherMap: <a href="http://openweathermap.org/API">http://openweathermap.org/API</a>
+        </p>
+        <p>Take the JSON results in the area below and paste them into this JSON editor to get a better look at the structured data: <a href="http://www.jsoneditoronline.org/">http://www.jsoneditoronline.org</a>
+        </p>
+        <p>jQuery AJAX documentation: <a href="http://learn.jquery.com/ajax/">http://learn.jquery.com/ajax</a>. The documentation for the jQuery.get() function in particular: <a href="http://api.jquery.com/jQuery.get/">http://api.jquery.com/jQuery.get/</a> 
+        </p>
+    </div>
+
+    <h2>Raw JSON string</h2>
+
+    <div id="raw_json"><pre></pre>
+    </div>
+
+    <h2>Parsed JSON object</h2>
+
+    <div id="parsed_json"></div>
+  </body>
+</html>
