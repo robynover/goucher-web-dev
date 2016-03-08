@@ -10,7 +10,7 @@ $(window).load(function(){
 	    // show the raw json
 	    $('#raw_json pre').text(JSON.stringify(response));
 
-	        text = '<b>Current Temperature: </b>' + response.main.temp + ' F<br/>';
+	        var text = '<b>Current Temperature: </b>' + response.main.temp + ' F<br/>';
 	        text += '<b>Weather Conditions: </b>' + response.weather[0].description + '<br/>';
 	        $('#parsed_json').append(text);
     
