@@ -1,0 +1,24 @@
+body{
+	font-family: "Slabo 13px";
+}
+header{
+
+}
+
+nav{
+	border-top: 1px solid #333;
+	border-bottom: 2px solid #333;
+}
+nav ul{
+	padding-left: 0;
+}
+nav li{
+	display:inline;
+	padding-right: 2em;
+}
+nav li a{
+	text-decoration: none;
+}
+nav li a:hover{
+	color: red;
+}
