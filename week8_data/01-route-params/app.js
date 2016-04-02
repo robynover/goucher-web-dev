@@ -48,7 +48,14 @@ app.get('/',function(req,res){
 app.get('/post/:slug',function(req,res){
 	// the value of :slug is available as req.params.slug 
 	var post = blog.posts[req.params.slug]; // uses bracket syntax because property name is inside a variable
-	res.render('single',post);
+	// if the post exists, render it
+	if (post){
+		res.render('single',post);
+	} else { // else, send 404 error
+		res.status(404);
+		res.render('404');
+	}
+	
 });
 
 // 404 Not found catch-all handler 
