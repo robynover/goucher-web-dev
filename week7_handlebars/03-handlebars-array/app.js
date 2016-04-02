@@ -66,6 +66,19 @@ app.get("/contacts", function(req,res){
 	res.render("people",data);
 });
 
+// 404 Not found catch-all handler 
+app.use(function(req, res, next){
+	res.status(404);
+	res.render('404');
+});
+
+// 500 server error handler 
+app.use(function(err, req, res, next){
+	console.error(err.stack);
+	res.status(500);
+	res.render('500');
+});
+
 // start the server
 app.listen(3000, function(){
 	console.log( 'Express started on http://localhost:3000; press Ctrl-C to terminate.' );
