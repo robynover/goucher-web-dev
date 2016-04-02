@@ -1,0 +1,22 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+header{
+	font-family: sans-serif;
+	border-bottom: 1px solid #333;
+	border-top: 1px solid rgba(240,249,255,1);
+	background: linear-gradient(to bottom, rgba(240,249,255,1) 0%, rgba(161,219,255,1) 100%);
+	margin: 0; 
+}
+
+header h1{
+	padding: 1rem;
+}
+header h1 a{
+	text-decoration: none;
+}
+
+main{
+	padding:1rem;
+}
