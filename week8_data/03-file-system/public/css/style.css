@@ -1,0 +1,16 @@
+header{
+	font-family: sans-serif;
+}
+nav{
+	border-top: 1px solid #ff0000;
+	border-bottom: 1px solid #ff0000;
+	padding: 0.5em;
+}
+input[type="text"]{
+	margin-bottom: 1em;
+	padding: 0.5em;
+	width: 200px;
+}
+label{
+	font-weight: bold;
+}
