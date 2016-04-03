@@ -1,0 +1,19 @@
+{{#if error}}
+
+	<h2>Error</h2>
+	<p>{{message}}</p>
+	<p><a href="/">Try Again</a></p>
+	
+{{else}}
+
+	<p>
+		A <b>{{tipPercent}}%</b> tip on a <b>${{origTotal}}</b> check comes to <b>${{tipAmount}}</b>.
+    </p>
+	
+	<p>Your total with tip is:</p>
+
+	<h1 class="tip">${{newTotal}}</h1>
+
+	<p><a href="/">Calculate Another</a></p>
+
+{{/if}}
