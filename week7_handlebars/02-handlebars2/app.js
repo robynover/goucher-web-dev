@@ -7,7 +7,7 @@ var handlebars = require('express-handlebars').create({ defaultLayout:'main' });
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
-// tell express to find static files in the "public directory"
+// tell express to find static files in the "public" directory
 app.use(express.static('public'));
 
 // --- routes --- //
