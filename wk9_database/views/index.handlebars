@@ -1,0 +1,7 @@
+<p><a href="/new">New Thread</a></p>
+
+{{#each messages}}
+	<h2><a href="/thread/{{_id}}">{{title}}</a></h2>
+	<p><em>{{username}}</em> at {{datetime}}</p>
+	<p>{{body}}</p>
+{{/each}}

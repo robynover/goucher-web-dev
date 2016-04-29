@@ -1,0 +1,15 @@
+<h2>{{title}}</h2>
+<p><em>{{username}}</em> at {{datetime}}</p>
+<p>{{body}}</p>
+
+{{#each replies}}
+	<p><em>{{username}}</em> at {{datetime}}</p>
+	<p>{{body}}</p>
+	<br/>
+{{/each}}
+
+<form method="post" action="/post/{{_id}}">
+	<p>Username: <input type="text" name="username" /></p>
+	<textarea name="messagebody"></textarea><br/>
+	<input type="submit" />
+</form>
